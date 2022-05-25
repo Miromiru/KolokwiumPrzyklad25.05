@@ -1,0 +1,32 @@
+﻿@model IEnumerable<KolokwiumPrzykład25._05.Entities.Hardware> 
+
+    <h2> Lista sprzętów</h2>
+
+<div>
+    <table class="table">
+        <thead class="tab-pane">
+            <tr>
+                <td>Nazwa</td>
+                <td>Rok</td>
+                <td>Liczba sztuk</td>
+                <td>Cena</td>
+                <td>
+                    <a class="btn btn-outline-success float-right" asp-action="Add">Dodaj sprzęt</a>
+                </td>
+            </tr>
+        </thead>
+        <tbody class="tab-content">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Year</td>
+                    <td>@item.Amount</td>
+                    <td>@item.Price</td>
+                    <td>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
