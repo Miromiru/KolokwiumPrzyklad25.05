@@ -1,0 +1,1 @@
+# KolokwiumPrzyklad25.05
